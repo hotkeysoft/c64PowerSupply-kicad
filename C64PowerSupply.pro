@@ -1,4 +1,4 @@
-update=2021-06-21 17:24:33
+update=2021-06-27 17:18:12
 version=1
 last_client=kicad
 [general]
@@ -41,6 +41,10 @@ MinHoleToHole=0.25
 TrackWidth1=0.25
 ViaDiameter1=0.8
 ViaDrill1=0.4
+ViaDiameter2=0.6
+ViaDrill2=0.3
+ViaDiameter3=0.8
+ViaDrill3=0.4
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -241,6 +245,17 @@ Clearance=0.2
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=MAINS
+Clearance=0.5
+TrackWidth=1
+ViaDiameter=1
+ViaDrill=0.6
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2

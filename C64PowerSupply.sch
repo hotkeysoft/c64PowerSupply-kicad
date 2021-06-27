@@ -47,12 +47,12 @@ $Comp
 L Connector:Screw_Terminal_01x03 J1
 U 1 1 60D009C5
 P 1400 2650
-F 0 "J1" H 1318 2967 50  0000 C CNN
-F 1 "120V IN" H 1318 2876 50  0000 C CNN
+F 0 "J1" H 1400 2850 50  0000 C CNN
+F 1 "120V IN" H 1350 2400 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1400 2650 50  0001 C CNN
 F 3 "~" H 1400 2650 50  0001 C CNN
 	1    1400 2650
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1600 2550 2250 2550
@@ -530,4 +530,8 @@ $EndComp
 Connection ~ 8950 3350
 Wire Wire Line
 	8950 3350 9100 3350
+Text Label 5600 2550 0    50   ~ 0
+9VAC+
+Text Label 5600 2650 0    50   ~ 0
+9VAC-
 $EndSCHEMATC
