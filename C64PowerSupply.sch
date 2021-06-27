@@ -44,12 +44,12 @@ Wire Wire Line
 Wire Wire Line
 	2250 3050 2700 3050
 $Comp
-L Connector_Generic:Conn_01x03 J1
+L Connector:Screw_Terminal_01x03 J1
 U 1 1 60D009C5
 P 1400 2650
 F 0 "J1" H 1318 2967 50  0000 C CNN
 F 1 "120V IN" H 1318 2876 50  0000 C CNN
-F 2 "Connector_JST:JST_VH_B3P-VH-B_1x03_P3.96mm_Vertical" H 1400 2650 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1400 2650 50  0001 C CNN
 F 3 "~" H 1400 2650 50  0001 C CNN
 	1    1400 2650
 	-1   0    0    -1  
@@ -84,12 +84,12 @@ Wire Wire Line
 Wire Wire Line
 	1750 2750 1750 2900
 $Comp
-L Connector_Generic:Conn_01x04 J2
+L Connector:Screw_Terminal_01x04 J2
 U 1 1 60D0513F
 P 9600 2750
 F 0 "J2" H 9680 2742 50  0000 L CNN
 F 1 "OUT" H 9680 2651 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 9600 2750 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 9600 2750 50  0001 C CNN
 F 3 "~" H 9600 2750 50  0001 C CNN
 	1    9600 2750
 	1    0    0    1   
@@ -100,7 +100,7 @@ U 1 1 60D069E7
 P 3550 2550
 F 0 "F1" V 3450 2550 50  0000 C CNN
 F 1 "1.5A" V 3450 2700 50  0000 C CNN
-F 2 "Fuse:Fuse_Littelfuse-LVR100" V 3480 2550 50  0001 C CNN
+F 2 "DTLib:Fuse_PTF-76" V 3480 2550 50  0001 C CNN
 F 3 "~" H 3550 2550 50  0001 C CNN
 	1    3550 2550
 	0    1    1    0   
@@ -111,7 +111,7 @@ U 1 1 60D07380
 P 3550 2850
 F 0 "F2" V 3650 2850 50  0000 C CNN
 F 1 "1.5A" V 3650 3000 50  0000 C CNN
-F 2 "Fuse:Fuse_Littelfuse-LVR100" V 3480 2850 50  0001 C CNN
+F 2 "DTLib:Fuse_PTF-76" V 3480 2850 50  0001 C CNN
 F 3 "~" H 3550 2850 50  0001 C CNN
 	1    3550 2850
 	0    1    1    0   
@@ -152,7 +152,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 3150 3550 4300
 Wire Wire Line
-	4550 4300 3550 4300
+	4550 4300 4000 4300
 Wire Wire Line
 	4550 4300 5100 4300
 Connection ~ 4550 4300
@@ -366,7 +366,7 @@ F 3 "" H 9100 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 3350 9100 3350
+	8750 3350 8950 3350
 Connection ~ 8750 3350
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -418,4 +418,116 @@ Wire Wire Line
 	8750 3350 8750 2750
 Wire Wire Line
 	8750 2750 9400 2750
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 60D13458
+P 2850 6700
+F 0 "H1" H 2950 6749 50  0000 L CNN
+F 1 "M3" H 2950 6658 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 2850 6700 50  0001 C CNN
+F 3 "~" H 2850 6700 50  0001 C CNN
+	1    2850 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 60D1430B
+P 3200 6700
+F 0 "H2" H 3300 6749 50  0000 L CNN
+F 1 "M3" H 3300 6658 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 3200 6700 50  0001 C CNN
+F 3 "~" H 3200 6700 50  0001 C CNN
+	1    3200 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 60D15E2D
+P 3550 6700
+F 0 "H3" H 3650 6749 50  0000 L CNN
+F 1 "M3" H 3650 6658 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 3550 6700 50  0001 C CNN
+F 3 "~" H 3550 6700 50  0001 C CNN
+	1    3550 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 60D1607F
+P 3900 6700
+F 0 "H4" H 4000 6749 50  0000 L CNN
+F 1 "M3" H 4000 6658 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 3900 6700 50  0001 C CNN
+F 3 "~" H 3900 6700 50  0001 C CNN
+	1    3900 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6900 3200 6950
+Wire Wire Line
+	3900 6800 3900 6900
+Wire Wire Line
+	3900 6900 3550 6900
+Connection ~ 3200 6900
+Wire Wire Line
+	2850 6800 2850 6900
+Wire Wire Line
+	2850 6900 3200 6900
+Wire Wire Line
+	3200 6800 3200 6900
+Wire Wire Line
+	3550 6800 3550 6900
+Connection ~ 3550 6900
+Wire Wire Line
+	3550 6900 3200 6900
+$Comp
+L power:GND #PWR02
+U 1 1 60D19F37
+P 3200 6950
+F 0 "#PWR02" H 3200 6700 50  0001 C CNN
+F 1 "GND" H 3205 6777 50  0000 C CNN
+F 2 "" H 3200 6950 50  0001 C CNN
+F 3 "" H 3200 6950 50  0001 C CNN
+	1    3200 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 60D2E4DE
+P 2100 6750
+F 0 "HS1" H 2242 6871 50  0000 L CNN
+F 1 "Heatsink" H 2242 6780 50  0000 L CNN
+F 2 "DTLib:AAVID581002B02500G" H 2112 6750 50  0001 C CNN
+F 3 "~" H 2112 6750 50  0001 C CNN
+	1    2100 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60DA56CA
+P 4000 4300
+F 0 "#FLG0102" H 4000 4375 50  0001 C CNN
+F 1 "PWR_FLAG" H 4000 4473 50  0000 C CNN
+F 2 "" H 4000 4300 50  0001 C CNN
+F 3 "~" H 4000 4300 50  0001 C CNN
+	1    4000 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 4300
+Wire Wire Line
+	4000 4300 3550 4300
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 60DA5A5B
+P 8950 3350
+F 0 "#FLG0103" H 8950 3425 50  0001 C CNN
+F 1 "PWR_FLAG" H 8950 3523 50  0000 C CNN
+F 2 "" H 8950 3350 50  0001 C CNN
+F 3 "~" H 8950 3350 50  0001 C CNN
+	1    8950 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 8950 3350
+Wire Wire Line
+	8950 3350 9100 3350
 $EndSCHEMATC
