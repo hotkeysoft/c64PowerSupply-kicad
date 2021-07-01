@@ -1,4 +1,4 @@
-update=2021-06-27 17:18:12
+update=2021-06-30 21:34:40
 version=1
 last_client=kicad
 [general]
@@ -252,10 +252,21 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=MAINS
-Clearance=0.5
-TrackWidth=1
+Clearance=1
+TrackWidth=1.2
 ViaDiameter=1
 ViaDrill=0.6
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=POWER
+Clearance=0.5
+TrackWidth=1.2
+ViaDiameter=1.2
+ViaDrill=0.8
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2

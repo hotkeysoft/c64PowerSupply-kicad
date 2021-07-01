@@ -43,17 +43,6 @@ Wire Wire Line
 	2250 3050 2250 2900
 Wire Wire Line
 	2250 3050 2700 3050
-$Comp
-L Connector:Screw_Terminal_01x03 J1
-U 1 1 60D009C5
-P 1400 2650
-F 0 "J1" H 1400 2850 50  0000 C CNN
-F 1 "120V IN" H 1350 2400 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1400 2650 50  0001 C CNN
-F 3 "~" H 1400 2650 50  0001 C CNN
-	1    1400 2650
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1600 2550 2250 2550
 Connection ~ 2250 2550
@@ -86,13 +75,13 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x04 J2
 U 1 1 60D0513F
-P 9600 2750
-F 0 "J2" H 9680 2742 50  0000 L CNN
-F 1 "OUT" H 9680 2651 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 9600 2750 50  0001 C CNN
-F 3 "~" H 9600 2750 50  0001 C CNN
-	1    9600 2750
-	1    0    0    1   
+P 9600 2650
+F 0 "J2" H 9680 2642 50  0000 L CNN
+F 1 "OUT" H 9680 2551 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-5.0-H_1x04_P5.00mm_Horizontal" H 9600 2650 50  0001 C CNN
+F 3 "~" H 9600 2650 50  0001 C CNN
+	1    9600 2650
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Fuse F1
@@ -316,7 +305,7 @@ L Device:R R3
 U 1 1 60D42B5A
 P 8750 4100
 F 0 "R3" H 8820 4146 50  0000 L CNN
-F 1 "1.5K" H 8820 4055 50  0000 L CNN
+F 1 "1K" H 8820 4055 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8680 4100 50  0001 C CNN
 F 3 "~" H 8750 4100 50  0001 C CNN
 	1    8750 4100
@@ -327,21 +316,10 @@ L Device:R R2
 U 1 1 60D4380C
 P 8750 3800
 F 0 "R2" H 8820 3846 50  0000 L CNN
-F 1 "ADJ" H 8820 3755 50  0000 L CNN
+F 1 "1K8" H 8820 3755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8680 3800 50  0001 C CNN
 F 3 "~" H 8750 3800 50  0001 C CNN
 	1    8750 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 60D43DD6
-P 8750 3500
-F 0 "R1" H 8820 3546 50  0000 L CNN
-F 1 "4.7K" H 8820 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8680 3500 50  0001 C CNN
-F 3 "~" H 8750 3500 50  0001 C CNN
-	1    8750 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -353,16 +331,15 @@ Wire Wire Line
 	8500 3950 8500 3150
 Wire Wire Line
 	8500 3150 7200 3150
-Connection ~ 8750 3950
 $Comp
 L power:VCC #PWR0102
 U 1 1 60D5873A
-P 9100 3350
-F 0 "#PWR0102" H 9100 3200 50  0001 C CNN
-F 1 "VCC" H 9115 3523 50  0000 C CNN
-F 2 "" H 9100 3350 50  0001 C CNN
-F 3 "" H 9100 3350 50  0001 C CNN
-	1    9100 3350
+P 9500 3350
+F 0 "#PWR0102" H 9500 3200 50  0001 C CNN
+F 1 "VCC" H 9515 3523 50  0000 C CNN
+F 2 "" H 9500 3350 50  0001 C CNN
+F 3 "" H 9500 3350 50  0001 C CNN
+	1    9500 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -527,11 +504,39 @@ F 3 "~" H 8950 3350 50  0001 C CNN
 	1    8950 3350
 	1    0    0    -1  
 $EndComp
-Connection ~ 8950 3350
-Wire Wire Line
-	8950 3350 9100 3350
 Text Label 5600 2550 0    50   ~ 0
 9VAC+
 Text Label 5600 2650 0    50   ~ 0
 9VAC-
+$Comp
+L Device:R_POT_TRIM RV1
+U 1 1 60DD4D1F
+P 8750 3500
+F 0 "RV1" H 9100 3550 50  0000 R CNN
+F 1 "2K" H 9050 3450 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266W_Vertical" H 8750 3500 50  0001 C CNN
+F 3 "~" H 8750 3500 50  0001 C CNN
+	1    8750 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3350 9500 3350
+Connection ~ 8950 3350
+Connection ~ 8750 3950
+Wire Wire Line
+	8900 3500 8900 3650
+Wire Wire Line
+	8900 3650 8750 3650
+Connection ~ 8750 3650
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 60D009C5
+P 1400 2650
+F 0 "J1" H 1400 2850 50  0000 C CNN
+F 1 "120V IN" H 1350 2400 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 1400 2650 50  0001 C CNN
+F 3 "~" H 1400 2650 50  0001 C CNN
+	1    1400 2650
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
