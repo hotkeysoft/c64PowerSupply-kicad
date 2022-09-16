@@ -379,10 +379,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "MAINS",
-        "nets": [
-          "/HOT",
-          "/NEUTRAL"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.2,
@@ -407,9 +404,6 @@
           "/VUNREG",
           "GND",
           "Net-(D1-Pad2)",
-          "Net-(D1-Pad4)",
-          "Net-(F1-Pad2)",
-          "Net-(F2-Pad2)",
           "VCC"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
