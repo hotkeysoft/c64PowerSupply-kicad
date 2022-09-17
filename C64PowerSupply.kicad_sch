@@ -2624,7 +2624,7 @@
     (property "Value" "120/240V SELECT" (id 1) (at 38.1 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Button_Switch_THT:SW_NKK_G1xJP" (id 2) (at 38.1 74.93 0)
+    (property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP" (id 2) (at 38.1 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 38.1 74.93 0)
@@ -2878,7 +2878,7 @@
     (uuid 9cf55ed4-dd28-4f74-a0dd-663e350a82d3)
     (property "Reference" "SW1" (id 0) (at 39.37 58.42 0))
     (property "Value" "120/240V SELECT" (id 1) (at 38.1 60.96 0))
-    (property "Footprint" "Button_Switch_THT:SW_NKK_G1xJP" (id 2) (at 38.1 66.04 0)
+    (property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP" (id 2) (at 38.1 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 38.1 66.04 0)
@@ -3112,10 +3112,10 @@
       (reference "RV4") (unit 1) (value "2K") (footprint "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical")
     )
     (path "/9cf55ed4-dd28-4f74-a0dd-663e350a82d3"
-      (reference "SW1") (unit 1) (value "120/240V SELECT") (footprint "Button_Switch_THT:SW_NKK_G1xJP")
+      (reference "SW1") (unit 1) (value "120/240V SELECT") (footprint "Button_Switch_THT:SW_NKK_GW12LJP")
     )
     (path "/0ee86955-6c93-4014-949a-24fd577f7e5a"
-      (reference "SW1") (unit 2) (value "120/240V SELECT") (footprint "Button_Switch_THT:SW_NKK_G1xJP")
+      (reference "SW1") (unit 2) (value "120/240V SELECT") (footprint "Button_Switch_THT:SW_NKK_GW12LJP")
     )
     (path "/00000000-0000-0000-0000-000060cfadc3"
       (reference "TR1") (unit 1) (value "2x115V to 2x8V") (footprint "DTLib:Transformer_Hammond_183K16")
