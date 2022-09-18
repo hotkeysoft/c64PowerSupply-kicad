@@ -1,6 +1,7 @@
 \#auto_saved_files\#
 *.000
 *.bak
+*.backup
 *.bck
 *.kicad_pcb-bak
 *.kicad_sch-bak

@@ -1,24 +1,24 @@
 # C64 Power Supply
-Rev A June 2021
+Rev B September 2022
 
-### Update September 2022
+### Work in progress, untested
 
-The power supply works okay, but needs improvement. I havent't tested it long term but enough to see the downsides of this version:
-
-- The heat sink is a bit flimsy for long term use;
-- It needs inrush current protection. I had to beef up the 5V side fuse to 2A and I'm probably just lucky it doesn't blow;
-- The transformer is marginally OK for a C64, but underpowered for a C128 that uses ~2A on the 5V side;
-- I kinda trust the LM2596 regulator (it's used everywhere), but for people a bit more paranoid, the circuit could use overvoltage protection on the 5V side;
-- Not much protection on the mains side, could use a MOV or three. A fuse on the input side is probably a good idea too (but a fused power connector or in-line fuse can easily be added)
-
-So I'll start working on Rev B, especially since I need a C128 power supply.
+Will update when build & tested
 
 ### Simple Switching Power Supply
-- 120AC Input
+- 120/240VAC Input (toggle with jumpers)
+- Beefier transformer (56VA)
+- TVS diodes on both transformer output lines (optional)
+- MOV and filtering cap on input side (optional)
 - 9VAC Output 1.5A Max w/Fuse
-- 5VDC Output 1.5A Max w/Fuse
-- LM2596T-ADJ for +5V output
+- 5VDC Output 3A Max w/Fuse, more than enough for C128
 - +5V Adjustable with trimmer
+- BD9E303EFJ Buck switching regulator for +5V output
+  - In theory more efficient than old LM2596T, tests will tell 
+- Two terminal blocks to use the power supply with either a C64 or a C128
+  - *NOT* at the same time...
+    - 9VAC line should be fine in theory (transformer can provide 3A). Altough noise/crosstalk could be an issue.
+    - 5V line could overload. The max capacity of this switching regulator is 3A. C128 uses around 2A by itself, with nothing connected. C64 is rated to use 1.5A. Not responsible if someone powers both at the same time.
 
 Images
 ============
