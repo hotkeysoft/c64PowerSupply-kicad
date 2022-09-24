@@ -6,7 +6,7 @@
 
   (title_block
     (title "C64/C128 Power Supply")
-    (date "2022-09-17")
+    (date "2022-09-23")
     (rev "B")
   )
 
@@ -2122,7 +2122,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 37d20cc4-6c18-489b-9321-bc09a1ff068f)
   )
-  (text "TR1:      183K16 - PWR XFMR LAMINATED 56VA\nD1:       KBPC610-A1-0000 1000V 6A\nRV2,RV3:  SMBJP6KE15CA-TP - TVS DIODE 12.8VWM \nL1:       BMRF00060630100MA1 - FIXED IND 10UH 4A\nC1:       CAP FILM 0.047UF 20% 560VDC RAD\nC2:       CAP ALUM 1000UF 20% 50V RADIAL 105°C\nC3:       CER 10UF 25V X7R 1206\nC4,C6:    CER 0.1UF 25V X7R 0805\nC7,C8:    CER 22UF 25V X7R 1210\n"
+  (text "TR1:      183K16 - PWR XFMR LAMINATED 56VA\nD1:       KBPC610-A1-0000 1000V 6A\nRV2,RV3:  SMBJP6KE15CA-TP - TVS DIODE 12.8VWM \nL1:       BMRF00060630100MA1 - FIXED IND 10UH 4A\nC1:       CAP FILM 0.047UF 20% 560VDC RAD\nC2:       CAP ALUM 2200UF 20% 50V RADIAL 105°C\nC3:       CER 10UF 25V X7R 1206\nC4,C6:    CER 0.1UF 25V X7R 0805\nC7,C8:    CER 22UF 25V X7R 1210\n"
     (at 31.75 151.13 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9a5dbbd4-78a5-4856-a6e0-7681c470ce9c)
@@ -2428,7 +2428,7 @@
     (property "Reference" "C2" (id 0) (at 119.761 94.0816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1000μF" (id 1) (at 119.761 96.393 0)
+    (property "Value" "2200μF" (id 1) (at 119.761 96.393 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm" (id 2) (at 117.8052 99.06 0)
@@ -3034,7 +3034,7 @@
       (reference "C1") (unit 1) (value "0.047uF") (footprint "Capacitor_THT:C_Rect_L18.0mm_W5.0mm_P15.00mm_FKS3_FKP3")
     )
     (path "/00000000-0000-0000-0000-000060d15bdb"
-      (reference "C2") (unit 1) (value "1000μF") (footprint "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm")
+      (reference "C2") (unit 1) (value "2200μF") (footprint "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm")
     )
     (path "/7254fb60-50d3-4b7a-9a31-2a919d8e6e76"
       (reference "C3") (unit 1) (value "10μF") (footprint "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder")
