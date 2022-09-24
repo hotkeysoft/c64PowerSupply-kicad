@@ -1,9 +1,11 @@
 # C64 Power Supply
 Rev B September 2022
 
-### Work in progress, untested
+### Basic Tests: complete
 
-Will update when build & tested
+This was version was built and tested 40 minutes @ 2.5A on the 5V line with no issue. 
+- Heat dissipation could be a problem in an plastic enclosure, will need more tests.
+  - Regulator dissipates heat through ground plane so a metal case (and metal stand-offs) could be enough
 
 ### Simple Switching Power Supply
 - 120/240VAC Input (toggle with jumpers)
